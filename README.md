@@ -4,6 +4,10 @@
 
 Restaurant Ordering App is a web-based ordering system for restaurants that enables customers to browse the menu, create an order, and complete checkout using a built-in payment modal. The app features a dynamic interface with smooth animations and an overlay effect when the payment modal pops up.
 
+## Live Demo
+
+Check out the live demo of the app [here](https://dancing-griffin-4dd074.netlify.app/).
+
 ## Features
 
 - Dynamic menu items rendered from a JSON-like data file.
