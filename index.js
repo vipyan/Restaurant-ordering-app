@@ -54,14 +54,14 @@ document.addEventListener("click", (e) => {
             orderCard.innerHTML = "";
             totalPriceContainer.innerHTML = "";
             totalPrice = 0;
-            itemInList = 0;
             isFirstOrder = true;
-            if (isFirstOrder) {
+            if (itemInList) {
                 
                 document.getElementById("purchased-message").innerHTML = `
                 <p class="All-the-best">Thanks ${name}! Your order is on its way!</p>
                 `
             }
+            itemInList = 0;
         }
         else {
             alert("Please fill in all fields");
