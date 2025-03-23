@@ -56,9 +56,12 @@ document.addEventListener("click", (e) => {
             totalPrice = 0;
             itemInList = 0;
             isFirstOrder = true;
-            document.getElementById("purchased-message").innerHTML = `
-            <p class="All-the-best">Thanks ${name}! Your order is on its way!</p>
-            `
+            if (isFirstOrder) {
+                
+                document.getElementById("purchased-message").innerHTML = `
+                <p class="All-the-best">Thanks ${name}! Your order is on its way!</p>
+                `
+            }
         }
         else {
             alert("Please fill in all fields");
