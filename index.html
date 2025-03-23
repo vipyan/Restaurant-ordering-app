@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant ordering app</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        
+       <link rel="stylesheet" href="index.css">
+       
+    </head>
+    <body>
+        <header>
+            <div class="container header">
+                <h1>Jimmy’s Diner</h1>
+                <h2>The best burgers and pizzas in town.</h2>
+            </div>
+        </header>
+        <main>
+            <!-- Menu goes here --> 
+            <div class="container main" id="main">
+            </div>
+
+            <!-- Order goes here -->
+            <div class="container order ">
+                
+                <div class="order-list" >
+                    <div class="order-card" id="order-card">
+                        
+                    </div>
+                    
+                    <div class="total-price" id="total-price">
+                        
+    
+                    </div>
+                    
+                </div>
+
+                <div class="purchased-message" id="purchased-message">
+                    <!-- Thank you message goes here -->
+                </div>
+                
+            </div>
+
+            <div class="overlay" id="overlay"></div>
+
+            <!-- Modal goes here -->
+
+            <div class="container">
+
+                    <div class="modal" id="modal">
+                        <div class="modal-container">
+
+                                <h2>Enter Card Details</h2>
+                                <form >
+                                    <input type="text" 
+                                    placeholder="Enter your name"
+                                    id="name" 
+                                    required>
+                                    <br>
+                                    <input type="text" 
+                                    placeholder="Enter card number"
+                                    id="card-number"
+                                    required>
+                                    <br>
+                                    <input type="text" 
+                                    placeholder="Enter CVV"
+                                    id="cvv"
+                                    required>
+                                    <br>
+                                    <button type="submit" id="pay">Pay</button>
+                                </form>
+                        </div>
+                    </div>
+            </div>
+
+        </main>
+        
+
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+} 
+body{
+    font-family: 'Smythe',sans-serif;
+}
+.container{
+    width: 60vw;
+    margin: 0 auto;
+}
+.header{
+    
+    height: 20vh;
+    color: #fff;
+    padding: 3rem 4rem;
+    
+    background: url('./images/ferks.png') no-repeat center/cover;
+    
+    
+}
+
+.header h1{
+    font-size: 2.5em;
+    /* line-height: 2rem; */
+    font-weight: 300;
+    margin-bottom: .5em;
+}
+
+.header h2{
+    font-size: 1.5em;
+    font-weight: 100;
+    
+}
+.card{
+    display: flex;
+    justify-content: flex-start;
+    height: 150px;
+    gap: 2rem;
+    align-items: center;
+    padding: 0 4rem;
+    margin:  0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    color: #000000;
+    position: relative;
+    border-bottom: #D2D2D2 1px solid;
+}
+.card:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    transition: all .3s ease;
+}
+.plus{
+    border: #DEDEDE 1px solid;
+    font-size: 2rem;
+    font-weight: 100;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    
+   }
+.plus:hover{
+   
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+.plus:active{
+    transform: scale(1);
+    transition: all .3s ease;
+}
+.plus:focus{
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border: #16DB99 1px solid;
+}
+
+   .fa-plus{
+    color: #3C3C3C;
+    font-weight:100 ;
+    font-size: 2rem;
+    
+   }
+    .fa-plus:hover{
+     color: #16DB99;
+     transform: scale(1.1);
+     transition: all .3s ease;
+    }
+ 
+
+img.logo {
+    width: 80px;
+    height: 80px;
+}
+img.logo:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+.content h3{
+    font-size: 2.2rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.content .fade-color{
+    color: #8B8B8B;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.content p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    
+    font-family: 'Verdana', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    z-index: 10;
+
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 5px;
+}
+.modal-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    transform: translateX(10%);
+}
+.modal h2{
+    width: 70%;
+    margin: 100px 2rem;
+    padding: 0 1rem;
+    
+    text-align: center;
+}
+form input{
+    width: 70%;
+    height: 3.75rem;
+    margin: 1rem 2rem;
+    padding: 0 1rem;
+    border-radius: 5px;
+    border: #000000 1px solid;
+    font-size: 1.2rem;
+}
+
+#pay{
+    display: inline-block;
+    width: 70%;
+    margin: 1rem 2rem;
+    padding: 0 1rem;
+    height: 5rem;
+    
+    border: none;
+    background-color: #16DB99;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 900;
+    border-radius: 5px;
+    font-family: 'Verdana', sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+#pay:hover{
+    background-color: #0E9B6D;
+    transition: all .3s ease;
+}
+
+.visible{
+    display: block;
+}
+.order-item,
+.final-total-container{
+    display: flex;
+    padding: 1rem 0;
+    gap: .5rem;
+    text-align: center;
+    /* border: #000000 1px solid; */
+}
+.order-item h3{
+    font-size: 2.2rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.push{
+    margin-left: auto;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+.order-title{
+    width: 20%;
+    margin: .5rem auto;
+    font-size: 2.2rem;
+    font-weight: 200;
+}
+.final-total{
+    font-size: 2.2rem;
+    font-weight: 200;
+}
+.final-total-btn{
+    display: inline-block;
+    width: 100%;
+    height: 3.75rem;
+    margin: 4.2rem 0;
+    border: none;
+    background-color: #16DB99;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 900;
+    border-radius: 5px;
+    font-family: 'Verdana', sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.final-total-btn:hover{
+    background-color: #0E9B6D;
+    transition: all .3s ease;
+}
+
+.final-total-container{
+    border-top: #393333 2px solid;
+}
+.remove-btn{
+    border: none;
+    color: #BBBBBB;
+    background-color: #FFFFFF;
+    font-size: .8rem;
+    font-family: 'Verdana', sans-serif;
+    cursor: pointer;
+}
+.All-the-best{
+    background-color: #ECFDF5;
+    color: #065F46;
+    margin: 5rem 0;
+    padding: 5rem;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 3rem;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    display: none;
+}
+
+.overlay.visible {
+    display: block;
+}
